@@ -7,6 +7,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import com.android.utility.Utility;
+import com.android.utility.WorkingDirectory;
 import com.android.utility.config.Config;
 import com.android.utility.config.VersionConfig;
 
@@ -37,5 +39,9 @@ public class UtilityFrame extends JFrame {
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(12, 41, 424, 17);
 		contentPane.add(lblNewLabel);
+		
+		JLabel lblWorkingDirectory = new JLabel("Working Directory: " + WorkingDirectory.getWorkingDirectory());
+		lblWorkingDirectory.setBounds(12, 474, 424, 17);
+		contentPane.add(lblWorkingDirectory);
 	}
 }

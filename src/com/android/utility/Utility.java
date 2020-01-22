@@ -13,6 +13,14 @@ public class Utility {
 	
 	public static void main(String[] args) {
 		
+		new WorkingDirectory();
+		
+		initUI();
+		
+	}
+	
+	private static void initUI() {
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {

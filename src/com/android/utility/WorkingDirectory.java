@@ -9,13 +9,21 @@ public class WorkingDirectory {
 	
 	public WorkingDirectory() {
 		
-		
+		doCheckForDirectory();
 		
 	}
 	
 	public void doCheckForDirectory() {
 		
+		File dir = new File(getWorkingDirectory());
 		
+		if ((doesExist = dir.exists())) {
+			System.out.println("Working Driectory exists");
+			return;
+		} else {
+			dir.mkdir();
+			System.out.println("Working Driectory created");
+		}
 		
 	}
 	
@@ -25,6 +33,10 @@ public class WorkingDirectory {
 		String workplace = homeDir + File.separator + DIRECTORY_NAME + File.separator;
 		return workplace;
 		
+	}
+	
+	public boolean doesExist() {
+		return doesExist;
 	}
 
 }
