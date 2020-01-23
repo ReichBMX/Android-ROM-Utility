@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Apache Commons IO 2.6"/>
+	<classpathentry kind="src" path="Apache Commons Compress 1.19"/>
+	<classpathentry kind="src" path="Google Brotli"/>
+	<classpathentry kind="src" path="Zstd"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<accessrules>
 			<accessrule kind="accessible" pattern="**"/>
 		</accessrules>
 	</classpathentry>
+	<classpathentry kind="lib" path="libs/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="libs/junit-4.13.jar"/>
+	<classpathentry kind="lib" path="libs/xz-1.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
